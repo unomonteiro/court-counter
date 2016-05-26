@@ -21,11 +21,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
-                android:text="Team A"
+                android:text="@string/home_team"
                 android:gravity="center_horizontal"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="14sp"
-                android:textColor="#616161"/>
+                android:textColor="#616161"
+                android:textAllCaps="true"/>
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
@@ -77,11 +78,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
-                android:text="Team B"
+                android:text="@string/away_team"
                 android:gravity="center_horizontal"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="14sp"
-                android:textColor="#616161"/>
+                android:textColor="#616161"
+                android:textAllCaps="true"/>
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"

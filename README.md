@@ -11,5 +11,5 @@ Based on udacity course with some improvements:
 
 ![screenshot_scores_350_land](https://cloud.githubusercontent.com/assets/7604348/15590124/e4665d00-238d-11e6-81de-e57deef2dce5.png)
 
-
+Basketball icon by Round Pixel
 

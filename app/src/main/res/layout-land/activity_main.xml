@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:paddingTop="16dp"
                 android:text="Team A"
                 android:gravity="center_horizontal"
                 android:fontFamily="sans-serif-medium"
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="+3 Points"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:onClick="addThreeForTeamA"/>
 
             <Button
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:paddingTop="16dp"
                 android:text="Team B"
                 android:gravity="center_horizontal"
                 android:fontFamily="sans-serif-medium"
@@ -94,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="+3 Points"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:onClick="addThreeForTeamB"/>
 
             <Button

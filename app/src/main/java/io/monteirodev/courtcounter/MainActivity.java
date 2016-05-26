@@ -15,17 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         displayForTeamA(0);
         displayForTeamB(0);
+
+        // todo activityLifecycle
+        // todo savedPreferences
     }
-
-    /**
-     * Displays the given score for Team A.
-     */
-    public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
-
 
     public void addThreeForTeamA(View view) {
         scoreTeamA += 3;
@@ -40,12 +33,6 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForTeamA(View view) {
         scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
-    }
-
-    // todo refactor
-    public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
     }
 
     public void addThreeForTeamB(View view) {
@@ -67,5 +54,18 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * Displays the given score for Team A.
+     */
+    public void displayForTeamA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
     }
 }

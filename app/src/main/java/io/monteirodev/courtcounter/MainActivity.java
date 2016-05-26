@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        displayForTeamA(8);
+        displayForTeamA(0);
+        displayForTeamB(0);
     }
 
     /**
@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void addOneForTeamB(View view) {
         scoreTeamB += 1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void resetScore(View view) {
+        scoreTeamA = scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
 }
